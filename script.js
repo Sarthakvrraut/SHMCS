@@ -166,7 +166,7 @@ document.getElementById('registrationForm').addEventListener('submit2', function
     }
     
     // Show loading state
-    const submitButton = this.querySelector('button[type="submit"]');
+    const submitButton = this.querySelector('button[type="submit2"]');
     const originalText = submitButton.innerHTML;
     
     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
