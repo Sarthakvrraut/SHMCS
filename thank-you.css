@@ -1,0 +1,559 @@
+/* Thank You Page Specific Styles */
+
+.thank-you-section {
+    padding: 120px 0 80px;
+    background: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.thank-you-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Success Animation */
+.success-animation {
+    position: relative;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.checkmark-container {
+    position: relative;
+    z-index: 2;
+}
+
+.checkmark {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+}
+
+.checkmark-circle {
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: checkmark-circle 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.checkmark-check {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: checkmark-check 0.8s ease-in-out forwards;
+    animation-delay: 1.2s;
+}
+
+.success-particles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    opacity: 0;
+    animation: particle-burst 1.5s ease-out forwards;
+}
+
+.particle-1 {
+    top: 20%;
+    left: 20%;
+    animation-delay: 1.5s;
+}
+
+.particle-2 {
+    top: 20%;
+    right: 20%;
+    animation-delay: 1.6s;
+}
+
+.particle-3 {
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 1.7s;
+}
+
+.particle-4 {
+    bottom: 20%;
+    right: 20%;
+    animation-delay: 1.8s;
+}
+
+.particle-5 {
+    top: 50%;
+    left: 10%;
+    animation-delay: 1.9s;
+}
+
+.particle-6 {
+    top: 50%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+/* Thank You Message */
+.thank-you-message {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.thank-you-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.thank-you-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.thank-you-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Action Buttons */
+.thank-you-actions {
+    margin-bottom: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.btn-large i {
+    font-size: 1.25rem;
+}
+
+/* Additional Information */
+.additional-info {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.9s;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background: var(--bg-secondary);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.info-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.info-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+/* What's Next Section */
+.whats-next {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in-up 0.8s ease-out forwards;
+    animation-delay: 1.2s;
+}
+
+.whats-next h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--text-primary);
+}
+
+.next-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    padding: 20px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateX(5px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Social Section */
+.social-section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-in-up 0.8s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.social-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.social-section p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.social-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.social-link i {
+    font-size: 1.25rem;
+}
+
+.social-link span {
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 283;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes checkmark-check {
+    0% {
+        stroke-dashoffset: 60;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes particle-burst {
+    0% {
+        opacity: 0;
+        transform: scale(0) translate(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5) translate(var(--particle-x, 0), var(--particle-y, 0));
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Particle specific animations */
+.particle-1 {
+    --particle-x: -30px;
+    --particle-y: -30px;
+}
+
+.particle-2 {
+    --particle-x: 30px;
+    --particle-y: -30px;
+}
+
+.particle-3 {
+    --particle-x: -30px;
+    --particle-y: 30px;
+}
+
+.particle-4 {
+    --particle-x: 30px;
+    --particle-y: 30px;
+}
+
+.particle-5 {
+    --particle-x: -50px;
+    --particle-y: 0px;
+}
+
+.particle-6 {
+    --particle-x: 50px;
+    --particle-y: 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thank-you-title {
+        font-size: 2.5rem;
+    }
+    
+    .thank-you-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .thank-you-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-large {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .next-steps {
+        gap: 20px;
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-section {
+        padding: 100px 0 60px;
+    }
+    
+    .thank-you-title {
+        font-size: 2rem;
+    }
+    
+    .checkmark {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .success-particles {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .whats-next h2 {
+        font-size: 1.5rem;
+    }
+    
+    .step {
+        padding: 15px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer,
+    .social-section {
+        display: none;
+    }
+    
+    .thank-you-section {
+        padding: 20px 0;
+    }
+    
+    .success-animation,
+    .thank-you-actions {
+        display: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .info-card,
+    .step,
+    .social-link {
+        border-width: 2px;
+    }
+    
+    .checkmark-circle,
+    .checkmark-check {
+        stroke-width: 8;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .checkmark-circle,
+    .checkmark-check,
+    .particle,
+    .thank-you-message,
+    .thank-you-actions,
+    .additional-info,
+    .whats-next,
+    .social-section {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .info-card:hover,
+    .step:hover,
+    .social-link:hover {
+        transform: none;
+    }
+}
