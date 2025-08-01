@@ -102,7 +102,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Form submission with enhanced validation
-document.getElementById('registrationForm').addEventListener('submit', function(e) {
+document.getElementById('registrationForm').addEventListener('submit2', function(e) {
     e.preventDefault();
     
     // Get form data
